@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		906A2500184FC3D900160533 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 906A24FE184FC3D900160533 /* InfoPlist.strings */; };
+		906A2503184FC3D900160533 /* Driver_PL2303.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906A2502184FC3D900160533 /* Driver_PL2303.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		906A24F6184FC3D900160533 /* Driver PL2303.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Driver PL2303.kext"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906A24FA184FC3D900160533 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		906A24FD184FC3D900160533 /* Driver PL2303-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Driver PL2303-Info.plist"; sourceTree = "<group>"; };
+		906A24FF184FC3D900160533 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		906A2501184FC3D900160533 /* Driver_PL2303.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Driver_PL2303.h; sourceTree = "<group>"; };
+		906A2502184FC3D900160533 /* Driver_PL2303.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Driver_PL2303.cpp; sourceTree = "<group>"; };
+		906A2504184FC3D900160533 /* Driver PL2303-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Driver PL2303-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		906A24F1184FC3D900160533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		906A24EB184FC3D900160533 = {
+			isa = PBXGroup;
+			children = (
+				906A24FB184FC3D900160533 /* Driver PL2303 */,
+				906A24F8184FC3D900160533 /* Frameworks */,
+				906A24F7184FC3D900160533 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		906A24F7184FC3D900160533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				906A24F6184FC3D900160533 /* Driver PL2303.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		906A24F8184FC3D900160533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				906A24F9184FC3D900160533 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		906A24F9184FC3D900160533 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				906A24FA184FC3D900160533 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		906A24FB184FC3D900160533 /* Driver PL2303 */ = {
+			isa = PBXGroup;
+			children = (
+				906A2501184FC3D900160533 /* Driver_PL2303.h */,
+				906A2502184FC3D900160533 /* Driver_PL2303.cpp */,
+				906A24FC184FC3D900160533 /* Supporting Files */,
+			);
+			path = "Driver PL2303";
+			sourceTree = "<group>";
+		};
+		906A24FC184FC3D900160533 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				906A24FD184FC3D900160533 /* Driver PL2303-Info.plist */,
+				906A24FE184FC3D900160533 /* InfoPlist.strings */,
+				906A2504184FC3D900160533 /* Driver PL2303-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		906A24F2184FC3D900160533 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		906A24F5184FC3D900160533 /* Driver PL2303 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906A2507184FC3D900160533 /* Build configuration list for PBXNativeTarget "Driver PL2303" */;
+			buildPhases = (
+				906A24F0184FC3D900160533 /* Sources */,
+				906A24F1184FC3D900160533 /* Frameworks */,
+				906A24F2184FC3D900160533 /* Headers */,
+				906A24F3184FC3D900160533 /* Resources */,
+				906A24F4184FC3D900160533 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Driver PL2303";
+			productName = "Driver PL2303";
+			productReference = 906A24F6184FC3D900160533 /* Driver PL2303.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		906A24EC184FC3D900160533 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "NoZAP B.V.";
+			};
+			buildConfigurationList = 906A24EF184FC3D900160533 /* Build configuration list for PBXProject "Driver PL2303" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 906A24EB184FC3D900160533;
+			productRefGroup = 906A24F7184FC3D900160533 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				906A24F5184FC3D900160533 /* Driver PL2303 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		906A24F3184FC3D900160533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906A2500184FC3D900160533 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		906A24F4184FC3D900160533 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		906A24F0184FC3D900160533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906A2503184FC3D900160533 /* Driver_PL2303.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		906A24FE184FC3D900160533 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				906A24FF184FC3D900160533 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		906A2505184FC3D900160533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		906A2506184FC3D900160533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		906A2508184FC3D900160533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Driver PL2303/Driver PL2303-Prefix.pch";
+				INFOPLIST_FILE = "Driver PL2303/Driver PL2303-Info.plist";
+				MODULE_NAME = NoZAP.Driver_PL2303;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		906A2509184FC3D900160533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Driver PL2303/Driver PL2303-Prefix.pch";
+				INFOPLIST_FILE = "Driver PL2303/Driver PL2303-Info.plist";
+				MODULE_NAME = NoZAP.Driver_PL2303;
+				MODULE_VERSION = 1.0.0d1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		906A24EF184FC3D900160533 /* Build configuration list for PBXProject "Driver PL2303" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906A2505184FC3D900160533 /* Debug */,
+				906A2506184FC3D900160533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		906A2507184FC3D900160533 /* Build configuration list for PBXNativeTarget "Driver PL2303" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906A2508184FC3D900160533 /* Debug */,
+				906A2509184FC3D900160533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 906A24EC184FC3D900160533 /* Project object */;
+}
