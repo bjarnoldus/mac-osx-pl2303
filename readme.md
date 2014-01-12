@@ -8,7 +8,7 @@ A compiled kernelmodule and installation program can be found at:
 This driver enables the functionality of Prolific PL2303 USB serial adapter in Mac OS X. This PL2303 chip is used in various devices like usb serial dongles and embedded USB bridges in cellphones, GPS receivers, etcetera. 
 
 # Features
-This driver implements following features:
+This driver implements the following features:
 - Unix file-descriptor access (/dev/cu.NoZAP-PL2303-xxx, /dev/tty.NoZAP-PL2303-xxx)
 - Baudrates 300, 600, 1200, 4800, 9600, 19200, 115200, 230400
 - Databytes 5, 6, 7, 8
