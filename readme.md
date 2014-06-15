@@ -1,4 +1,4 @@
-# osx-pl2303 USB to Serial Driver
+# osx-pl2303 USB to Serial Driver [Download release](http://nozap.me/driver/osxpl2303)
 PL2303 USB to Serial Driver for Mac OS X 10.9 Mavericks. It supports devices of ATEN, IOData, Elcom, Itegno, Ma620, Ratoc, Tripp, Radioshack, Dcu10, SiteCom, Alcatel, Samsung, Siemens, Syntech, Nokia, MS3303H
 
 A compiled kernelmodule and installation program can be found at:
