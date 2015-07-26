@@ -22,34 +22,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>IOKitPersonalities</key>
-	<dict>
-		<key>0000_0000</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>${PRODUCT_NAME:rfc1034identifier}</string>
-			<key>IOKitDebug</key>
-			<integer>0</integer>
-			<key>IOMatchCategory</key>
-			<string>ProfilicSerialUSB</string>
-			<key>IOProviderClass</key>
-			<string>IOUSBDevice</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
-			<key>bConfigurationValue</key>
-			<integer>1</integer>
-			<key>bInterfaceNumber</key>
-			<integer>0</integer>
-			<key>idProduct</key>
-			<integer>0</integer>
-			<key>idVendor</key>
-			<integer>0</integer>
-		</dict>
-
-	</dict>
 	<key>OSBundleLibraries</key>
-	<dict>
-	</dict>
+	<dict/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2014 Repleo, All rights reserved.</string>
 </dict>

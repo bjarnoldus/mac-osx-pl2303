@@ -43,7 +43,7 @@
 #define PROLIFIC_REV_HX_CHIP_D	0x0400
 #define PROLIFIC_REV_1			0x0001
 
-#define baseName        "NoZAP-PL2303-"
+#define baseName        "Repleo-PL2303-"
 
 #define defaultName     "PL2303 Device"
 #define productNameLength   32                  // Arbitrary length
@@ -109,7 +109,7 @@
 // In my code set it to 16K to balance among a convenient
 // speed and memory use.
 
-#define kMaxCirBufferSize   16384
+#define kMaxCirBufferSize   1
 
 
 #define LAST_BYTE_COOLDOWN  100000
@@ -169,7 +169,7 @@ enum tXO_State {
 
 
 #define INTERRUPT_BUFF_SIZE 10
-#define USBLapPayLoad       2048
+#define USBLapPayLoad       1
 
 #define kUART_STATE			0x08
 

@@ -703,7 +703,7 @@ DEBUG_IOLog(5,"%s(%p)::startSerial SOUP 0x%x:0x%x:0x%x:0x%x  %d\n", getName(), t
 	}
 	
     
-    startPipes();                           // start reading on the usb pipes
+    //startPipes();                           start reading on the usb pipes
     
     return true;
 	
@@ -3536,10 +3536,10 @@ IOReturn me_nozap_driver_PL2303::setSerialConfiguration( void )
     }
 	
 	if(fBaudCode) {
-		buf[0] = fBaudCode & 0xff;
-		buf[1] = (fBaudCode >> 8) & 0xff;
-		buf[2] = (fBaudCode >> 16) & 0xff;
-		buf[3] = (fBaudCode >> 24) & 0xff;
+		buf[3] = fBaudCode & 0xff;
+		buf[2] = (fBaudCode >> 8) & 0xff;
+		buf[1] = (fBaudCode >> 16) & 0xff;
+		buf[0] = (fBaudCode >> 24) & 0xff;
 	}
 	
     switch (fPort->StopBits) {
@@ -3599,7 +3599,7 @@ IOReturn me_nozap_driver_PL2303::setSerialConfiguration( void )
     }
 	
 	if (fPort->CharLength >= 5 && fPort->CharLength <= 8){
-		buf[6] = fPort->CharLength;
+		buf[2] = fPort->CharLength;
     }
 	DEBUG_IOLog(3,"%s(%p)::setSerialConfiguration - Bits: %d \n", getName(), this,  buf[6]);
 	
@@ -3607,7 +3607,7 @@ IOReturn me_nozap_driver_PL2303::setSerialConfiguration( void )
     request.bRequest = SET_LINE_REQUEST;
 	request.wValue =  0;
 	request.wIndex = 0;
-	request.wLength = 7;
+	request.wLength = 2;
 	request.pData = buf;
 	rtn =  fpDevice->DeviceRequest(&request);
 	DEBUG_IOLog(3,"%s(%p)::setSerialConfiguration - return: %p \n", getName(), this,  rtn);
@@ -3657,7 +3657,7 @@ QueueStatus me_nozap_driver_PL2303::addBytetoQueue( CirQueue *Queue, char Value 
 	
 	/* Check to see if we need to wrap the pointer. */
 	
-    if ( Queue->NextChar >= Queue->End )
+    if ( Queue->NextChar >= Queue->Start )
 		Queue->NextChar =  Queue->Start;
     
 	DEBUG_IOLog(2,"me_nozap_driver_PL2303::addBytetoQueue IOLockUnLock( port->serialRequestLock ); kQueueNoError\n" );
@@ -4365,7 +4365,7 @@ IOReturn me_nozap_driver_PL2303::setBreak( bool data){
     
 	request.bmRequestType = USBmakebmRequestType(kUSBOut, kUSBClass, kUSBInterface);
     request.bRequest = BREAK_REQUEST;
-	request.wValue =  value; 
+	request.wValue =  0;
 	request.wIndex = 0;
 	request.wLength = 0;
 	request.pData = NULL;
