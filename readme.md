@@ -1,7 +1,7 @@
 # osx-pl2303 USB to Serial Driver [Download release](https://www.mac-usb-serial.com)
 PL2303 USB to Serial Driver for Mac OS X 10.9 Mavericks. It supports devices of ATEN, IOData, Elcom, Itegno, Ma620, Ratoc, Tripp, Radioshack, Dcu10, SiteCom, Alcatel, Samsung, Siemens, Syntech, Nokia, MS3303H
 
-NOTE: this driver code is obsolete since OS X 10.10. A complete rewritten, supported and maintained PL2303 driver can you find at:
+NOTE: this driver code is obsolete since OS X 10.10. A newly written, supported and maintained PL2303 driver can you find at:
 <https://www.mac-usb-serial.com>.
 
 # Purpose
@@ -9,7 +9,7 @@ This driver enables the functionality of Prolific PL2303 USB serial adapter in M
 
 # Features
 This driver implements the following features:
-- Unix file-descriptor access (/dev/cu.NoZAP-PL2303-xxx, /dev/tty.NoZAP-PL2303-xxx)
+- Unix file-descriptor access (/dev/cu.Repleo-PL2303-xxx, /dev/tty.Repleo-PL2303-xxx)
 - Baudrates 300, 600, 1200, 4800, 9600, 19200, 115200, 230400
 - Databytes 5, 6, 7, 8
 - Stopbits (1, 2)
